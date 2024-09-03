@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" type="text/css" href="style/pretty.css">
+<script src="script/colours.js"></script>
+<script src="script/clever.js"></script>
+<script src="script/jquery-3.5.1.js"></script>
+<script>
+$(document).ready(function() {
+	setUp();
+});
+</script>
+<title>Colour Comparer</title>
+</head>
+<body>
+	<div id="all" class="main">
+		<label for="colourList">Pick a colour:</label> <select id="colourList">
+			<!--option value="#eeeeee">dunno</option>
+			<option value="#254761">dark blue</option>
+			<option value="#88A4BA">light blue</option-->
+		</select>
+		
+		<button id="setColour1" onClick="setColour('colour1')">Set main colour</button>
+		<button id="setColour2" onClick="setColour('colour2')">Set colour 2</button>
+		<button id="setColour3" onClick="setColour('colour3')">Set colour 3</button>
+		<button id="copyColours" onClick="copyColours()">Copy colours</button>
+
+	
+	<div id="master">
+	<table>
+	<tr><td id="colour1" colspan="2"><div class="colourLabel" id="colour1Label"></div></td></tr>
+	<tr>
+	<td id="colour2" class="colourSub"><div class="colourLabel" id="colour2Label"></div></td>
+	<td id="colour3" class="colourSub"><div class="colourLabel" id="colour3Label"></div></td>
+	</tr>
+	</table>
+	</div>
+	</div>
+</body>
+</html>

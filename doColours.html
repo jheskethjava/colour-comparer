@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" type="text/css" href="style/pretty.css">
+<script src="script/colours.js"></script>
+<script src="script/clever.js"></script>
+<script src="script/jquery-3.5.1.js"></script>
+<script>
+$(document).ready(function() {
+	//setUp();
+});
+</script>
+<title>Colour Lists</title>
+</head>
+<body>
+	<div id="all" class="main">
+		<button id="drawAlls" onClick="drawAll()">Draw all</button>
+		<button id="drawShortlist" onClick="drawShortlist()">Draw shortlist</button>
+		<button id="drawMixers" onClick="drawMixers()">Draw mixers</button>
+		<button id="drawReds" onClick="drawReds()">Draw reds/yellows</button>
+		<button id="drawGreens" onClick="drawGreens()">Draw greens</button>
+		<button id="drawBlues" onClick="drawBlues()">Draw blues</button>
+		<button id="clearColours" onClick="clearColours()">Clear colours</button>
+		<!--button id="doThing" onClick="doThing()">Do thing</button-->
+	
+		Sort colours by:
+		<input type="radio" name="sortBy" id="sumSort" value="sumSort">
+		<label for="sumSort">RGB Sum</label>
+		<input type="radio" name="sortBy" id="lrvSort" value="lrvSort" checked>
+		<label for="lrvSort">LRV</label>
+		<input type="radio" name="sortBy" id="nameSort" value="nameSort">
+		<label for="nameSort">Name</label>
+
+	<div id="master">
+	</div>
+</body>
+</html>
